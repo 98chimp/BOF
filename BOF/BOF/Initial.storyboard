@@ -1,7 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zBG-Go-J2z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="zBx-17-qli">
+            <objects>
+                <viewController id="zBG-Go-J2z" customClass="InitialViewController" customModule="BOF" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmq-DR-ubv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zwg-xM-Z7e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TEk-FU-dZY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Arz-Zo-jjg">
+                                <rect key="frame" x="70" y="216" width="235" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Arz-Zo-jjg" secondAttribute="height" multiplier="1:1" id="OJ5-sg-7qp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.4039215686" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Arz-Zo-jjg" firstAttribute="leading" secondItem="TEk-FU-dZY" secondAttribute="leading" constant="70" id="2ww-fi-A0p"/>
+                            <constraint firstAttribute="trailing" secondItem="Arz-Zo-jjg" secondAttribute="trailing" constant="70" id="CWT-ec-rFy"/>
+                            <constraint firstItem="Arz-Zo-jjg" firstAttribute="centerY" secondItem="TEk-FU-dZY" secondAttribute="centerY" id="oeD-GE-G2s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="VoT-BP-RvW" kind="presentation" identifier="toMainStoryboard" modalTransitionStyle="crossDissolve" id="dbl-oB-r6D"/>
+                        <segue destination="8Wm-vj-8t0" kind="presentation" identifier="toSigninStoryboard" modalTransitionStyle="flipHorizontal" id="lUb-lV-gxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20x-4c-fqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="130"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="CBb-gH-Lah">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="VoT-BP-RvW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6g-fZ-uOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="-93"/>
+        </scene>
+        <!--Sign-in-->
+        <scene sceneID="hdq-gh-MVe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sign-in" id="8Wm-vj-8t0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orG-3v-d26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="235" height="235"/>
+    </resources>
 </document>
