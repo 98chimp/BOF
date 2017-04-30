@@ -1,22 +1,26 @@
 project 'BOF.xcodeproj'
 
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
 target 'BOF' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
   use_frameworks!
 
-  # Pods for BOF
-
+  pod 'ThunderCats', '~> 2.1'
+  pod 'HMSegmentedControl', '~> 1.5'
+  pod 'SkyFloatingLabelTextField', '~> 2.0'
+  pod 'M13ProgressSuite', '~> 1.2'
+  pod 'PureLayout', '~> 3.0'
+  pod 'RMDateSelectionViewController'
+  pod 'FaveButton', '~> 2.0.3'
+  
   target 'BOFTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'BOFUITests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'KIF', '~> 3.0'
   end
 
 end

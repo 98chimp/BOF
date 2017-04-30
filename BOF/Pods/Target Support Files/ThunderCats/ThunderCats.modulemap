@@ -1,0 +1,6 @@
+framework module ThunderCats {
+  umbrella header "ThunderCats-umbrella.h"
+
+  export *
+  module * { export * }
+}
