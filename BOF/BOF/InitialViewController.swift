@@ -73,6 +73,7 @@ class InitialViewController: UIViewController
     func routeUserToNextScreen()
     {
         hud?.dismiss(true)
-        self.performSegue(withIdentifier: segues.toMainStoryboard, sender: self)
+//        self.performSegue(withIdentifier: segues.toMainStoryboard, sender: self)
+        self.performSegue(withIdentifier: segues.toSigninStoryboard, sender: self)
     }
 }

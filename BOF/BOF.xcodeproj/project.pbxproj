@@ -10,6 +10,7 @@
 		19B9D36BC084AB59752A4661 /* Pods_BOF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE4D92154C631C017EBDA81 /* Pods_BOF.framework */; };
 		62EAE58D69079A1717597A3D /* Pods_BOFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3135F055C12C436F23F597AC /* Pods_BOFTests.framework */; };
 		9F7379DBAC9BDE661677AD41 /* Pods_BOFUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1378490ECE73FAD1FC82E386 /* Pods_BOFUITests.framework */; };
+		EB0B65121EB6AE0200D5EE1E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */; };
 		EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */; };
 		EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */; };
 		EB4FAEFA1EB63B7F00E8315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEF81EB63B7F00E8315A /* Main.storyboard */; };
@@ -17,12 +18,18 @@
 		EB4FAEFF1EB63B7F00E8315A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEFD1EB63B7F00E8315A /* LaunchScreen.storyboard */; };
 		EB4FAF0A1EB63B8000E8315A /* BOFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF091EB63B8000E8315A /* BOFTests.swift */; };
 		EB4FAF151EB63B8000E8315A /* BOFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF141EB63B8000E8315A /* BOFUITests.swift */; };
-		EB4FAF2D1EB64ECC00E8315A /* Sign-in.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF2C1EB64ECC00E8315A /* Sign-in.storyboard */; };
+		EB4FAF2D1EB64ECC00E8315A /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF2C1EB64ECC00E8315A /* Signin.storyboard */; };
 		EB4FAF2F1EB64EE300E8315A /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF2E1EB64EE300E8315A /* Welcome.storyboard */; };
 		EB4FAF311EB64EED00E8315A /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF301EB64EED00E8315A /* Initial.storyboard */; };
 		EB4FAF331EB67CAF00E8315A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF321EB67CAF00E8315A /* Constants.swift */; };
 		EB4FAF351EB67DC200E8315A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF341EB67DC200E8315A /* UIColor+Extensions.swift */; };
 		EB4FAF371EB6814100E8315A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF361EB6814100E8315A /* InitialViewController.swift */; };
+		EB4FAF391EB68A8E00E8315A /* BofButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF381EB68A8E00E8315A /* BofButton.swift */; };
+		EB4FAF3B1EB68CA900E8315A /* BofTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF3A1EB68CA900E8315A /* BofTextField.swift */; };
+		EB4FAF3D1EB68D9F00E8315A /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF3C1EB68D9F00E8315A /* FontAwesome.otf */; };
+		EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */; };
+		EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */; };
+		EB4FAF431EB694F600E8315A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF421EB694F600E8315A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,7 @@
 		AF3A1FC30BB1ACB0ED8D6927 /* Pods-BOFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOFTests/Pods-BOFTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02140C86B9F4A6AFCD2966A /* Pods-BOF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOF/Pods-BOF.debug.xcconfig"; sourceTree = "<group>"; };
 		DD165CAA43DADED421E74D89 /* Pods-BOFUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOFUITests/Pods-BOFUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		EB4FAEF11EB63B7F00E8315A /* BOF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -65,12 +73,18 @@
 		EB4FAF101EB63B8000E8315A /* BOFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4FAF141EB63B8000E8315A /* BOFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOFUITests.swift; sourceTree = "<group>"; };
 		EB4FAF161EB63B8000E8315A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB4FAF2C1EB64ECC00E8315A /* Sign-in.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Sign-in.storyboard"; sourceTree = "<group>"; };
+		EB4FAF2C1EB64ECC00E8315A /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		EB4FAF2E1EB64EE300E8315A /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		EB4FAF301EB64EED00E8315A /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		EB4FAF321EB67CAF00E8315A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EB4FAF341EB67DC200E8315A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		EB4FAF361EB6814100E8315A /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		EB4FAF381EB68A8E00E8315A /* BofButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BofButton.swift; sourceTree = "<group>"; };
+		EB4FAF3A1EB68CA900E8315A /* BofTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BofTextField.swift; sourceTree = "<group>"; };
+		EB4FAF3C1EB68D9F00E8315A /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninTableViewController.swift; sourceTree = "<group>"; };
+		EB4FAF421EB694F600E8315A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4FAF341EB67DC200E8315A /* UIColor+Extensions.swift */,
+				EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +222,8 @@
 		EB4FAF251EB63F3A00E8315A /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				EB4FAF381EB68A8E00E8315A /* BofButton.swift */,
+				EB4FAF3A1EB68CA900E8315A /* BofTextField.swift */,
 			);
 			name = Subclasses;
 			sourceTree = "<group>";
@@ -215,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */,
+				EB4FAF421EB694F600E8315A /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,7 +249,7 @@
 			children = (
 				EB4FAEFD1EB63B7F00E8315A /* LaunchScreen.storyboard */,
 				EB4FAF301EB64EED00E8315A /* Initial.storyboard */,
-				EB4FAF2C1EB64ECC00E8315A /* Sign-in.storyboard */,
+				EB4FAF2C1EB64ECC00E8315A /* Signin.storyboard */,
 				EB4FAF2E1EB64EE300E8315A /* Welcome.storyboard */,
 				EB4FAEF81EB63B7F00E8315A /* Main.storyboard */,
 			);
@@ -242,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4FAEFB1EB63B7F00E8315A /* Assets.xcassets */,
+				EB4FAF3C1EB68D9F00E8315A /* FontAwesome.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -259,6 +278,8 @@
 			children = (
 				EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */,
 				EB4FAF361EB6814100E8315A /* InitialViewController.swift */,
+				EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */,
+				EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -385,8 +406,9 @@
 				EB4FAF2F1EB64EE300E8315A /* Welcome.storyboard in Resources */,
 				EB4FAEFF1EB63B7F00E8315A /* LaunchScreen.storyboard in Resources */,
 				EB4FAEFC1EB63B7F00E8315A /* Assets.xcassets in Resources */,
+				EB4FAF3D1EB68D9F00E8315A /* FontAwesome.otf in Resources */,
 				EB4FAF311EB64EED00E8315A /* Initial.storyboard in Resources */,
-				EB4FAF2D1EB64ECC00E8315A /* Sign-in.storyboard in Resources */,
+				EB4FAF2D1EB64ECC00E8315A /* Signin.storyboard in Resources */,
 				EB4FAEFA1EB63B7F00E8315A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,9 +574,15 @@
 			files = (
 				EB4FAF371EB6814100E8315A /* InitialViewController.swift in Sources */,
 				EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */,
+				EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */,
+				EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */,
 				EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */,
+				EB4FAF391EB68A8E00E8315A /* BofButton.swift in Sources */,
 				EB4FAF331EB67CAF00E8315A /* Constants.swift in Sources */,
 				EB4FAF351EB67DC200E8315A /* UIColor+Extensions.swift in Sources */,
+				EB4FAF431EB694F600E8315A /* User.swift in Sources */,
+				EB4FAF3B1EB68CA900E8315A /* BofTextField.swift in Sources */,
+				EB0B65121EB6AE0200D5EE1E /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
