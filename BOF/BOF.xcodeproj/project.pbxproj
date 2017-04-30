@@ -137,12 +137,13 @@
 		EB4FAEF31EB63B7F00E8315A /* BOF */ = {
 			isa = PBXGroup;
 			children = (
-				EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */,
-				EB4FAEF61EB63B7F00E8315A /* ViewController.swift */,
-				EB4FAEF81EB63B7F00E8315A /* Main.storyboard */,
-				EB4FAEFB1EB63B7F00E8315A /* Assets.xcassets */,
-				EB4FAEFD1EB63B7F00E8315A /* LaunchScreen.storyboard */,
-				EB4FAF001EB63B7F00E8315A /* Info.plist */,
+				EB4FAF221EB63F0300E8315A /* Utilities */,
+				EB4FAF261EB63F5700E8315A /* Models */,
+				EB4FAF271EB63F6800E8315A /* Protocols */,
+				EB4FAF2B1EB63FC600E8315A /* View Controllers */,
+				EB4FAF281EB63F8100E8315A /* Storyboards */,
+				EB4FAF291EB63F9D00E8315A /* Resources */,
+				EB4FAF2A1EB63FA500E8315A /* Supporting Files */,
 			);
 			path = BOF;
 			sourceTree = "<group>";
@@ -163,6 +164,85 @@
 				EB4FAF161EB63B8000E8315A /* Info.plist */,
 			);
 			path = BOFUITests;
+			sourceTree = "<group>";
+		};
+		EB4FAF221EB63F0300E8315A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAF251EB63F3A00E8315A /* Subclasses */,
+				EB4FAF241EB63F2800E8315A /* Extensions */,
+				EB4FAF231EB63F1800E8315A /* Constants */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		EB4FAF231EB63F1800E8315A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		EB4FAF241EB63F2800E8315A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EB4FAF251EB63F3A00E8315A /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		EB4FAF261EB63F5700E8315A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EB4FAF271EB63F6800E8315A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		EB4FAF281EB63F8100E8315A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAEF81EB63B7F00E8315A /* Main.storyboard */,
+				EB4FAEFD1EB63B7F00E8315A /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		EB4FAF291EB63F9D00E8315A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAEFB1EB63B7F00E8315A /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EB4FAF2A1EB63FA500E8315A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAF001EB63B7F00E8315A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB4FAF2B1EB63FC600E8315A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAEF61EB63B7F00E8315A /* ViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +787,7 @@
 				EB4FAF1B1EB63B8000E8315A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4FAF1C1EB63B8000E8315A /* Build configuration list for PBXNativeTarget "BOFTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +796,7 @@
 				EB4FAF1E1EB63B8000E8315A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4FAF1F1EB63B8000E8315A /* Build configuration list for PBXNativeTarget "BOFUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +805,7 @@
 				EB4FAF211EB63B8000E8315A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
