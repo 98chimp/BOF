@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  BOF
 //
 //  Created by Shahin on 2017-04-30.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
