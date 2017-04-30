@@ -74,12 +74,5 @@ class InitialViewController: UIViewController
     {
         hud?.dismiss(true)
         self.performSegue(withIdentifier: segues.toMainStoryboard, sender: self)
-        //        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
-        //            self.logoVerticalConstraint.isActive = false
-        //            self.logoTopConstraint.isActive = true
-        //            self.logoTopConstraint.constant = kInitialLogoTopConstraint
-        //            self.view.layoutIfNeeded()
-        //        }) { (completed) in
-        //        }
     }
 }
