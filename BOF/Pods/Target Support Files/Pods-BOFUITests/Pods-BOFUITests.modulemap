@@ -1,0 +1,6 @@
+framework module Pods_BOFUITests {
+  umbrella header "Pods-BOFUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
