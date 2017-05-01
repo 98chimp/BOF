@@ -51,7 +51,7 @@ struct Constants
             static let toMainStoryboard = "toMainStoryboard"
             static let toSigninStoryboard = "toSigninStoryboard"
             static let toForgotPasswordScreen = "toForgotPasswordScreen"
-            static let toWelcomeStoryBoard = "toWelcomeStoryBoard"
+            static let toWelcomeStoryboard = "toWelcomeStoryboard"
             static let toSignupScreen = "toSignupScreen"
         }
     }

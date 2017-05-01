@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SigninTableViewController: BaseTableViewController
+class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
 {
     fileprivate typealias singinTextField = Constants.BOFTextField
     fileprivate typealias segues = Constants.Identifiers.Segues
@@ -20,19 +20,12 @@ class SigninTableViewController: BaseTableViewController
     
     // MARK: - Properties
     let user = User.currentUser
-    var isSignupCompleted = false
     
     // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setupUI()
-    }
-    
-    override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        handleSignupSuccess()
     }
     
     // MARK: - Helpers
@@ -51,28 +44,9 @@ class SigninTableViewController: BaseTableViewController
         return emailTextField.text?.tc_isValidEmailAddressFormat() ?? false
     }
     
-    
     func isPasswordFieldValid() -> Bool
     {
-        return passwordTextField.text?.characters.count ?? 0 >= kMinimumPasswordLength-1
-    }
-    
-    func evaluate(_ textField: UITextField)
-    {
-        if textField === emailTextField
-        {
-            if let floatingTextField = textField as? BofTextField
-            {
-                floatingTextField.errorMessage = isEmailFieldValid() ? "" : "invalid email"
-            }
-        }
-        else if textField === passwordTextField
-        {
-            if let floatingTextField = textField as? BofTextField
-            {
-                floatingTextField.errorMessage = isPasswordFieldValid() ? "" : "invalid password"
-            }
-        }
+        return passwordTextField.text?.characters.count ?? 0 >= kMinimumPasswordLength
     }
     
     fileprivate func handleSignin()
@@ -97,24 +71,6 @@ class SigninTableViewController: BaseTableViewController
         }
     }
     
-    fileprivate func handleSignupSuccess()
-    {
-        if isSignupCompleted
-        {
-            emailTextField.text = user.email
-            passwordTextField.text = user.password
-            
-            hud?.show(true)
-            execute(after: 2.0) {
-                self.presentHUDSuccess()
-                execute(after: 1.0) {
-                    self.hud?.dismiss(true)
-                    self.performSegue(withIdentifier: segues.toMainStoryboard, sender: nil)
-                }
-            }
-        }
-    }
-    
     // MARK: - TableView Delegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
@@ -131,8 +87,6 @@ class SigninTableViewController: BaseTableViewController
     // MARK: - TextField Delegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
-        evaluate(textField)
-        
         if textField === emailTextField
         {
             _ = passwordTextField.becomeFirstResponder()
@@ -146,12 +100,6 @@ class SigninTableViewController: BaseTableViewController
         return true
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
-    {
-        evaluate(textField)
-        return true
-    }
-    
     func textFieldDidBeginEditing(_ textField: UITextField)
     {
         forgotButton.isHidden = textField === passwordTextField
@@ -160,17 +108,41 @@ class SigninTableViewController: BaseTableViewController
     func textFieldDidEndEditing(_ textField: UITextField)
     {
         forgotButton.isHidden = false
-        evaluate(textField)
     }
     
     // MARK: - Actions
+    @IBAction func textFieldEditingDidChange(_ textField: BofTextField)
+    {
+        switch textField {
+        case emailTextField:
+            textField.errorMessage = isEmailFieldValid() ? "" : "invalid email"
+            break
+        default:
+            textField.errorMessage = isPasswordFieldValid() ? "" : "invalid password"
+            break
+        }
+    }
+    
     @IBAction func signinButtonTapped(_ sender: UIButton)
     {
         handleSignin()
     }
     
-    @IBAction func unwindFromSignup(_ segue: UIStoryboardSegue)
+    // MARK: - Protocols
+    func handleSignupSucess()
     {
-        isSignupCompleted = true
+        execute(after: 1.0) {
+            self.emailTextField.text = self.user.email
+            self.passwordTextField.text = self.user.password
+            
+            self.hud?.show(true)
+            execute(after: 2.0) {
+                self.presentHUDSuccess()
+                execute(after: 1.0) {
+                    self.hud?.dismiss(true)
+                    self.performSegue(withIdentifier: segues.toMainStoryboard, sender: nil)
+                }
+            }
+        }
     }
 }

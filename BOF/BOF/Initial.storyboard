@@ -38,7 +38,7 @@
                     </view>
                     <connections>
                         <segue destination="VoT-BP-RvW" kind="presentation" identifier="toMainStoryboard" modalTransitionStyle="crossDissolve" id="dbl-oB-r6D"/>
-                        <segue destination="8Wm-vj-8t0" kind="presentation" identifier="toSigninStoryboard" modalTransitionStyle="flipHorizontal" id="lUb-lV-gxl"/>
+                        <segue destination="8Wm-vj-8t0" kind="presentation" identifier="toSigninStoryboard" modalTransitionStyle="crossDissolve" id="lUb-lV-gxl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20x-4c-fqu" userLabel="First Responder" sceneMemberID="firstResponder"/>

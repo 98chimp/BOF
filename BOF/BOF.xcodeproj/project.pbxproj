@@ -11,6 +11,8 @@
 		62EAE58D69079A1717597A3D /* Pods_BOFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3135F055C12C436F23F597AC /* Pods_BOFTests.framework */; };
 		9F7379DBAC9BDE661677AD41 /* Pods_BOFUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1378490ECE73FAD1FC82E386 /* Pods_BOFUITests.framework */; };
 		EB0B65121EB6AE0200D5EE1E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */; };
+		EB0B65141EB6B00300D5EE1E /* SingupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */; };
+		EB0B65161EB6BB1100D5EE1E /* SingupSuccessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65151EB6BB1100D5EE1E /* SingupSuccessProtocol.swift */; };
 		EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */; };
 		EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */; };
 		EB4FAEFA1EB63B7F00E8315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEF81EB63B7F00E8315A /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		C02140C86B9F4A6AFCD2966A /* Pods-BOF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOF/Pods-BOF.debug.xcconfig"; sourceTree = "<group>"; };
 		DD165CAA43DADED421E74D89 /* Pods-BOFUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOFUITests/Pods-BOFUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupTableViewController.swift; sourceTree = "<group>"; };
+		EB0B65151EB6BB1100D5EE1E /* SingupSuccessProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupSuccessProtocol.swift; sourceTree = "<group>"; };
 		EB4FAEF11EB63B7F00E8315A /* BOF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 		EB4FAF271EB63F6800E8315A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				EB0B65151EB6BB1100D5EE1E /* SingupSuccessProtocol.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				EB4FAF361EB6814100E8315A /* InitialViewController.swift */,
 				EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */,
 				EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */,
+				EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -575,9 +581,11 @@
 				EB4FAF371EB6814100E8315A /* InitialViewController.swift in Sources */,
 				EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */,
 				EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */,
+				EB0B65141EB6B00300D5EE1E /* SingupTableViewController.swift in Sources */,
 				EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */,
 				EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */,
 				EB4FAF391EB68A8E00E8315A /* BofButton.swift in Sources */,
+				EB0B65161EB6BB1100D5EE1E /* SingupSuccessProtocol.swift in Sources */,
 				EB4FAF331EB67CAF00E8315A /* Constants.swift in Sources */,
 				EB4FAF351EB67DC200E8315A /* UIColor+Extensions.swift in Sources */,
 				EB4FAF431EB694F600E8315A /* User.swift in Sources */,
