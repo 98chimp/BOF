@@ -63,6 +63,12 @@ struct Constants
         static let passwordIcon = "\u{f023}"
         static let calendar = "\u{f073}"
         static let person = "\u{f007}"
+        static let firstNameErrorMessage = "invalid first name"
+        static let lastNameErrorMessage = "invalid last name"
+        static let emailErrorMessage = "invalid email address"
+        static let passwordErrorMessage = "invalid password"
+        static let confirmPasswordErrorMessage = "invalid password confirmation"
+        static let birthDateErrorMessage = "invalid birthdate"
     }
 
 }
