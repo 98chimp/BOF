@@ -183,6 +183,13 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		EB0B65211EB6DD2900D5EE1E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
 		EB4FAEE81EB63B7F00E8315A = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +333,7 @@
 			children = (
 				EB0B65171EB6CFDE00D5EE1E /* Initial */,
 				EB0B65191EB6CFF600D5EE1E /* Signin */,
+				EB0B65211EB6DD2900D5EE1E /* Welcome */,
 				EB0B65181EB6CFE800D5EE1E /* Main */,
 			);
 			name = "View Controllers";
