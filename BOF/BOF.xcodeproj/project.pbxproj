@@ -13,6 +13,9 @@
 		EB0B65121EB6AE0200D5EE1E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */; };
 		EB0B65141EB6B00300D5EE1E /* SingupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */; };
 		EB0B65161EB6BB1100D5EE1E /* SingupSuccessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65151EB6BB1100D5EE1E /* SingupSuccessProtocol.swift */; };
+		EB0B651B1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B651A1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift */; };
+		EB0B651E1EB6D1C500D5EE1E /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B651D1EB6D1C500D5EE1E /* AlertService.swift */; };
+		EB0B65201EB6D28400D5EE1E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B651F1EB6D28400D5EE1E /* UIAlertController+Extensions.swift */; };
 		EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */; };
 		EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */; };
 		EB4FAEFA1EB63B7F00E8315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEF81EB63B7F00E8315A /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupTableViewController.swift; sourceTree = "<group>"; };
 		EB0B65151EB6BB1100D5EE1E /* SingupSuccessProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupSuccessProtocol.swift; sourceTree = "<group>"; };
+		EB0B651A1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewController.swift; sourceTree = "<group>"; };
+		EB0B651D1EB6D1C500D5EE1E /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		EB0B651F1EB6D28400D5EE1E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		EB4FAEF11EB63B7F00E8315A /* BOF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +148,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EB0B65171EB6CFDE00D5EE1E /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAF361EB6814100E8315A /* InitialViewController.swift */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
+		EB0B65181EB6CFE800D5EE1E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		EB0B65191EB6CFF600D5EE1E /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */,
+				EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */,
+				EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */,
+				EB0B651A1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift */,
+			);
+			name = Signin;
+			sourceTree = "<group>";
+		};
+		EB0B651C1EB6D1B300D5EE1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B651D1EB6D1C500D5EE1E /* AlertService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		EB4FAEE81EB63B7F00E8315A = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +240,7 @@
 		EB4FAF221EB63F0300E8315A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EB0B651C1EB6D1B300D5EE1E /* Services */,
 				EB4FAF231EB63F1800E8315A /* Constants */,
 				EB4FAF251EB63F3A00E8315A /* Subclasses */,
 				EB4FAF241EB63F2800E8315A /* Extensions */,
@@ -219,6 +261,7 @@
 			children = (
 				EB4FAF341EB67DC200E8315A /* UIColor+Extensions.swift */,
 				EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */,
+				EB0B651F1EB6D28400D5EE1E /* UIAlertController+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -281,11 +324,9 @@
 		EB4FAF2B1EB63FC600E8315A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */,
-				EB4FAF361EB6814100E8315A /* InitialViewController.swift */,
-				EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */,
-				EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */,
-				EB0B65131EB6B00300D5EE1E /* SingupTableViewController.swift */,
+				EB0B65171EB6CFDE00D5EE1E /* Initial */,
+				EB0B65191EB6CFF600D5EE1E /* Signin */,
+				EB0B65181EB6CFE800D5EE1E /* Main */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -582,10 +623,13 @@
 				EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */,
 				EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */,
 				EB0B65141EB6B00300D5EE1E /* SingupTableViewController.swift in Sources */,
+				EB0B651E1EB6D1C500D5EE1E /* AlertService.swift in Sources */,
 				EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */,
+				EB0B651B1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift in Sources */,
 				EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */,
 				EB4FAF391EB68A8E00E8315A /* BofButton.swift in Sources */,
 				EB0B65161EB6BB1100D5EE1E /* SingupSuccessProtocol.swift in Sources */,
+				EB0B65201EB6D28400D5EE1E /* UIAlertController+Extensions.swift in Sources */,
 				EB4FAF331EB67CAF00E8315A /* Constants.swift in Sources */,
 				EB4FAF351EB67DC200E8315A /* UIColor+Extensions.swift in Sources */,
 				EB4FAF431EB694F600E8315A /* User.swift in Sources */,

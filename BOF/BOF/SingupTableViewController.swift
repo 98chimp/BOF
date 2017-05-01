@@ -33,13 +33,6 @@ class SignupTableViewController: BaseTableViewController
         setupUI()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        delegate = presentingViewController as? SignupSuccessProtocol
-        delegate?.handleSignupSucess()
-    }
-    
     // MARK: - Helpers
     fileprivate func setupUI()
     {
@@ -172,6 +165,9 @@ class SignupTableViewController: BaseTableViewController
             user.email = emailTextField.text!
             user.password = passwordTextField.text!
             
+            delegate = presentingViewController as? SignupSuccessProtocol
+            delegate?.handleSignupSucess()
+
             dismiss(animated: true, completion: nil)
         }
         else
