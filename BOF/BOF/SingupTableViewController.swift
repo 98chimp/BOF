@@ -192,7 +192,7 @@ class SignupTableViewController: BaseTableViewController
                 passwordTextField.shake()
             }
             
-            if !isPasswordConfirmFieldValid()
+            if !isPasswordConfirmFieldValid() || passwordConfirmTextField.text == ""
             {
                 passwordConfirmTextField.shake()
             }
