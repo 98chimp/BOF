@@ -361,6 +361,7 @@
 				EB4FAEEF1EB63B7F00E8315A /* Resources */,
 				F940E7D2BD92AF3ED0FD993D /* [CP] Embed Pods Frameworks */,
 				A062F9B16AFD3DC26D9D6EA5 /* [CP] Copy Pods Resources */,
+				EB9B0BF81EB7970D00C6DDB5 /* Auto-increment Build Number */,
 			);
 			buildRules = (
 			);
@@ -613,6 +614,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BOF/Pods-BOF-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EB9B0BF81EB7970D00C6DDB5 /* Auto-increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto-increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%X\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
 		};
 		F940E7D2BD92AF3ED0FD993D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
