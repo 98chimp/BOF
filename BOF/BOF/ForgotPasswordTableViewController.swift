@@ -10,7 +10,7 @@ import UIKit
 
 class ForgotPasswordTableViewController: BaseTableViewController
 {
-    fileprivate typealias singinTextField = Constants.BOFTextField
+    fileprivate typealias bofTextField = Constants.BOFTextField
     
     // MARK: - Outlets
     @IBOutlet weak var cancelButton: UIButton!
@@ -30,7 +30,7 @@ class ForgotPasswordTableViewController: BaseTableViewController
     fileprivate func setupUI()
     {
         tableView.allowsSelection = false
-        emailTextField.iconText = singinTextField.emailIcon
+        emailTextField.iconText = bofTextField.emailIcon
     }
     
     func isEmailFieldValid() -> Bool
@@ -78,7 +78,7 @@ class ForgotPasswordTableViewController: BaseTableViewController
     // MARK: - Actions
     @IBAction func textFieldEditingChanged(_ textField: BofTextField)
     {
-        textField.errorMessage = isEmailFieldValid() ? "" : "invalid email"
+        textField.errorMessage = isEmailFieldValid() ? "" : bofTextField.emailErrorMessage
     }
     
     @IBAction func cancelButtonWasTapped(_ sender: UIButton)

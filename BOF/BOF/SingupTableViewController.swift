@@ -11,7 +11,7 @@ import RMDateSelectionViewController
 
 class SignupTableViewController: BaseTableViewController
 {
-    fileprivate typealias signupTextField = Constants.BOFTextField
+    fileprivate typealias bofTextField = Constants.BOFTextField
     
     // MARK: - Properties
     let user = User.currentUser
@@ -38,16 +38,16 @@ class SignupTableViewController: BaseTableViewController
     {
         tableView.allowsSelection = false
         
-        firstnameTextField.iconText = signupTextField.person
-        lastnameTextField.iconText = signupTextField.person
-        emailTextField.iconText = signupTextField.emailIcon
-        passwordTextField.iconText = signupTextField.passwordIcon
-        passwordTextField.iconFont = UIFont(name: signupTextField.iconFont, size: 17)
+        firstnameTextField.iconText = bofTextField.person
+        lastnameTextField.iconText = bofTextField.person
+        emailTextField.iconText = bofTextField.emailIcon
+        passwordTextField.iconText = bofTextField.passwordIcon
+        passwordTextField.iconFont = UIFont(name: bofTextField.iconFont, size: 17)
         passwordTextField.iconMarginBottom = 0.0
-        passwordConfirmTextField.iconText = signupTextField.passwordIcon
-        passwordConfirmTextField.iconFont = UIFont(name: signupTextField.iconFont, size: 17)
+        passwordConfirmTextField.iconText = bofTextField.passwordIcon
+        passwordConfirmTextField.iconFont = UIFont(name: bofTextField.iconFont, size: 17)
         passwordConfirmTextField.iconMarginBottom = 0.0
-        birthDateTextField.iconText = signupTextField.calendar
+        birthDateTextField.iconText = bofTextField.calendar
     }
     
     func handleBirthDateTap()
@@ -192,7 +192,7 @@ class SignupTableViewController: BaseTableViewController
                 passwordTextField.shake()
             }
             
-            if !isPasswordConfirmFieldValid()
+            if !isPasswordConfirmFieldValid() || passwordConfirmTextField.text == ""
             {
                 passwordConfirmTextField.shake()
             }
@@ -210,19 +210,19 @@ class SignupTableViewController: BaseTableViewController
         
         switch textField {
         case firstnameTextField:
-            firstnameTextField.errorMessage = isFirstNameValid() ? "" : "invalid first name"
+            firstnameTextField.errorMessage = isFirstNameValid() ? "" : bofTextField.firstNameErrorMessage
             break
         case lastnameTextField:
-            lastnameTextField.errorMessage = isLastNameValid() ? "" : "invalid last name"
+            lastnameTextField.errorMessage = isLastNameValid() ? "" : bofTextField.lastNameErrorMessage
             break
         case emailTextField:
-            emailTextField.errorMessage = isEmailFieldValid() ? "" : "invalid email"
+            emailTextField.errorMessage = isEmailFieldValid() ? "" : bofTextField.emailErrorMessage
             break
         case passwordTextField:
-            passwordTextField.errorMessage = isPasswordFieldValid() ? "" : "invalid password"
+            passwordTextField.errorMessage = isPasswordFieldValid() ? "" : bofTextField.passwordErrorMessage
             break
         case passwordConfirmTextField:
-            passwordConfirmTextField.errorMessage = isPasswordConfirmFieldValid() ? "" : "invalid password"
+            passwordConfirmTextField.errorMessage = isPasswordConfirmFieldValid() ? "" : bofTextField.confirmPasswordErrorMessage
             break
         default:
             _ = textField.resignFirstResponder()

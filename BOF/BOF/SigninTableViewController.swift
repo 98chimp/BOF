@@ -10,7 +10,7 @@ import UIKit
 
 class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
 {
-    fileprivate typealias singinTextField = Constants.BOFTextField
+    fileprivate typealias bofTextField = Constants.BOFTextField
     fileprivate typealias segues = Constants.Identifiers.Segues
     
     // MARK: - Outlets
@@ -33,9 +33,9 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
     {
         tableView.allowsSelection = false
         
-        emailTextField.iconText = singinTextField.emailIcon
-        passwordTextField.iconText = singinTextField.passwordIcon
-        passwordTextField.iconFont = UIFont(name: singinTextField.iconFont, size: 17)
+        emailTextField.iconText = bofTextField.emailIcon
+        passwordTextField.iconText = bofTextField.passwordIcon
+        passwordTextField.iconFont = UIFont(name: bofTextField.iconFont, size: 17)
         passwordTextField.iconMarginBottom = 0.0
     }
     
@@ -115,10 +115,10 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
     {
         switch textField {
         case emailTextField:
-            textField.errorMessage = isEmailFieldValid() ? "" : "invalid email"
+            textField.errorMessage = isEmailFieldValid() ? "" : bofTextField.emailErrorMessage
             break
         default:
-            textField.errorMessage = isPasswordFieldValid() ? "" : "invalid password"
+            textField.errorMessage = isPasswordFieldValid() ? "" : bofTextField.passwordErrorMessage
             break
         }
     }
