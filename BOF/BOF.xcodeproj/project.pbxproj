@@ -37,6 +37,7 @@
 		EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */; };
 		EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */; };
 		EB4FAF431EB694F600E8315A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF421EB694F600E8315A /* User.swift */; };
+		EB9B0BD71EB6F04A00C6DDB5 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninTableViewController.swift; sourceTree = "<group>"; };
 		EB4FAF421EB694F600E8315A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				EB0B651D1EB6D1C500D5EE1E /* AlertService.swift */,
+				EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				EB4FAF431EB694F600E8315A /* User.swift in Sources */,
 				EB4FAF3B1EB68CA900E8315A /* BofTextField.swift in Sources */,
 				EB0B65121EB6AE0200D5EE1E /* UIView+Extensions.swift in Sources */,
+				EB9B0BD71EB6F04A00C6DDB5 /* SessionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

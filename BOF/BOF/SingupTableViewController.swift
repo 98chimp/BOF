@@ -14,7 +14,6 @@ class SignupTableViewController: BaseTableViewController
     fileprivate typealias bofTextField = Constants.BOFTextField
     
     // MARK: - Properties
-    let user = User.currentUser
     var delegate: SignupSuccessProtocol?
     
     // MARK: - Outlets

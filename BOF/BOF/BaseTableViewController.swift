@@ -13,6 +13,7 @@ import M13ProgressSuite
 class BaseTableViewController: UITableViewController, UITextFieldDelegate
 {
     // MARK: - Properties
+    let user = User.current
     var hud: M13ProgressHUD?
     override var preferredStatusBarStyle: UIStatusBarStyle
     {

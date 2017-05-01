@@ -71,4 +71,30 @@ struct Constants
         static let birthDateErrorMessage = "invalid birthdate"
     }
 
+    struct UserDefaultKeys
+    {
+        static let userInfo = "userInfo"
+        static let isSavedToKeychain = "isSavedToKeychain"
+    }
+    
+    struct UICKeyChainStoreKeys
+    {
+        static let email = "email"
+        static let password = "password"
+        static let token = "token"
+    }
+    
+    struct Models
+    {
+        struct User
+        {
+            static let firstName = "firstName"
+            static let lastName = "lastName"
+            static let birthDate = "birthDate"
+            static let bofHandle = "bofHandle"
+            static let email = "email"
+            static let password = "password"
+            static let token = "token"
+        }
+    }
 }

@@ -18,9 +18,6 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
     @IBOutlet weak var passwordTextField: BofTextField!
     @IBOutlet weak var forgotButton: BofButton!
     
-    // MARK: - Properties
-    let user = User.currentUser
-    
     // MARK: - Lifecycle
     override func viewDidLoad()
     {
@@ -53,9 +50,23 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
     {
         if let email = emailTextField.text, let password = passwordTextField.text, isEmailFieldValid() && isPasswordFieldValid()
         {
-            user.email = email
-            user.password = password
-            performSegue(withIdentifier: segues.toMainStoryboard, sender: self)
+            if user.token == ""
+            {
+                let alert = AlertService.prepareSignupRequestAlert()
+                alert.addAction(withTitle: "Okay", style: .default, handler: {
+                    self.performSegue(withIdentifier: segues.toSignupScreen, sender: self)
+                })
+                present(alert, animated: true, completion: nil)
+            }
+            else
+            {
+                user.email = email
+                user.password = password
+                SessionService.shared.storeCredentialsFor(user)
+                SessionService.shared.storeUserInfo(user.zipForLocalStorage())
+                
+                performSegue(withIdentifier: segues.toMainStoryboard, sender: user)
+            }
         }
         else
         {
@@ -131,6 +142,8 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
     // MARK: - Protocols
     func handleSignupSucess()
     {
+        user.token = UUID().uuidString
+        
         execute(after: 1.0) {
             self.emailTextField.text = self.user.email
             self.passwordTextField.text = self.user.password
@@ -140,7 +153,7 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
                 self.presentHUDSuccess()
                 execute(after: 1.0) {
                     self.hud?.dismiss(true)
-                    self.performSegue(withIdentifier: segues.toMainStoryboard, sender: nil)
+                    self.present(AlertService.prepareSuccessfulSignupAlert() , animated: true, completion: nil)
                 }
             }
         }

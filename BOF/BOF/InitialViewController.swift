@@ -15,6 +15,7 @@ class InitialViewController: UIViewController
     
     // MARK: - Properties
     fileprivate var hud: M13ProgressHUD?
+    fileprivate let currentUser = User.current
     override var preferredStatusBarStyle: UIStatusBarStyle
     {
         return .lightContent
@@ -73,7 +74,14 @@ class InitialViewController: UIViewController
     func routeUserToNextScreen()
     {
         hud?.dismiss(true)
-//        self.performSegue(withIdentifier: segues.toMainStoryboard, sender: self)
-        self.performSegue(withIdentifier: segues.toSigninStoryboard, sender: self)
+        
+        if SessionService.shared.retrieveCredentials().2 == ""
+        {
+            performSegue(withIdentifier: segues.toSigninStoryboard, sender: self)
+        }
+        else
+        {
+            performSegue(withIdentifier: segues.toMainStoryboard, sender: self)
+        }
     }
 }

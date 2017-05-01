@@ -16,9 +16,6 @@ class ForgotPasswordTableViewController: BaseTableViewController
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var emailTextField: BofTextField!
     
-    // MARK: - Properties
-    let user = User.currentUser
-    
     // MARK: - Lifecycle
     override func viewDidLoad()
     {
@@ -42,8 +39,8 @@ class ForgotPasswordTableViewController: BaseTableViewController
     {
         if isEmailFieldValid()
         {
-            let alert = AlertService.presentDisabledFeatureAlert()
-            alert.addAction(withTitle: "Got it!", style: .cancel, handler: { 
+            let alert = AlertService.prepareDisabledFeatureAlert()
+            alert.addAction(withTitle: "Got it!", style: .default, handler: {
                 self.dismiss(animated: true, completion: nil)
             })
             present(alert, animated: true, completion: nil)
