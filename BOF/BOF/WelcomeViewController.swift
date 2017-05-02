@@ -10,14 +10,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController
 {    
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setNeedsStatusBarAppearanceUpdate()
     }
     
-    //MARK: - Actions
+    // MARK: - Actions
     @IBAction func skipButtonPressed(_ sender: UIButton)
     {
         dismiss(animated: true, completion: nil)

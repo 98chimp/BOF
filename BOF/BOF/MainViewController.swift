@@ -13,21 +13,21 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     typealias cells = Constants.Identifiers.Cells
     typealias segues = Constants.Identifiers.Segues
     
-    //MARK: - Outlets
+    // MARK: - Outlets
     @IBOutlet weak var signoutBarButton: UIBarButtonItem!
     @IBOutlet weak var postsTableView: UITableView!
     
-    //MARK: - Properties
+    // MARK: - Properties
     fileprivate let currentUser = User.current
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setupUI()
     }
     
-    //MARK: - Helpers
+    // MARK: - Helpers
     fileprivate func setupUI()
     {
         if let font = UIFont(name: Constants.BOFTextField.iconFont, size: 25)
@@ -41,27 +41,27 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         navigationItem.titleView = imageView
     }
 
-    //MARK: - TableView Data Source
+    // MARK: - TableView Data Source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 1
     }
     
-    //MARK: - TableView Delegate
+    // MARK: - TableView Delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: cells.postCell, for: indexPath)
         return cell
     }
     
-    //MARK: - Actions
+    // MARK: - Actions
     @IBAction func signoutButtonWasTapped(_ sender: UIBarButtonItem)
     {
         SessionService.shared.signout(currentUser)
         dismiss(animated: true, completion: nil)
     }
     
-    //MARK: - Navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segues.toNewPostScreen
         {

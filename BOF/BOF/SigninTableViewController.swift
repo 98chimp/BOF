@@ -151,7 +151,7 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
         handleSignin()
     }
     
-    //MARK: - Navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == segues.toSignupScreen

@@ -11,17 +11,17 @@ import SZTextView
 
 class NewPostViewController: UIViewController, UITextViewDelegate
 {
-    //MARK: - Outlets
+    // MARK: - Outlets
     @IBOutlet weak var postTextView: SZTextView!
     @IBOutlet var accessoryView: UIView!
     @IBOutlet weak var countdownLabel: UILabel!
     @IBOutlet weak var postButton: UIButton!
     
-    //MARK: - Properties
+    // MARK: - Properties
     fileprivate let currentUser = User.current
     var delegate: NewPostProtocol?
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -40,12 +40,12 @@ class NewPostViewController: UIViewController, UITextViewDelegate
         view.endEditing(true)
     }
     
-    //MARK: - Helpers
+    // MARK: - Helpers
     fileprivate func configureView()
     {
     }
     
-    //MARK: - TextView Delegate
+    // MARK: - TextView Delegate
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool
     {
         if textView.inputAccessoryView == nil
@@ -73,7 +73,7 @@ class NewPostViewController: UIViewController, UITextViewDelegate
         return true
     }
     
-    //MARK: - Actions
+    // MARK: - Actions
     @IBAction func cancelButtonWasTapped(_ sender: UIButton)
     {
         dismiss(animated: true, completion: nil)
