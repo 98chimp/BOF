@@ -11,7 +11,7 @@ Oh, and, of course, you can create a new post and add it to your timeline any ti
 Lastly, don't forget to mark the 'bof-worthy' posts as you read along.
 
 ## Additional Considerations
-For optimal UX, the app caches old posts so as to load the app quickly with content. The full version will continue working in the background to manage its network services and update the UI with fresh content.
+For optimal UX, the app caches old posts so as to minimize load time. The full version will continue working in the background to manage its network services and update the UI with fresh content.
 
 To improve UX further, the app keeps a secret 'token' locally until it's refreshed or destroyed (after deleting the app). This token allows the user to 'walk in and out' of the app without having to sign in every time the app is launched.
 
