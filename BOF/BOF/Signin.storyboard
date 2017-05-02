@@ -52,6 +52,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-bw-DBl" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="email"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
@@ -99,6 +100,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5Y9-gc-B2c" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="password"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
@@ -130,6 +132,7 @@
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CJ-KW-w8n">
                                                     <rect key="frame" x="291" y="18" width="49" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="forgotButton"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                     <state key="normal" title="forgot?">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,6 +162,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwC-oG-XRt" customClass="BofButton" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="20" width="315" height="40"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration" label="signinButton"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="iNa-XB-fpi"/>
                                                     </constraints>
@@ -172,6 +176,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuQ-el-5s0">
                                                     <rect key="frame" x="35" y="59" width="39" height="31"/>
+                                                    <accessibility key="accessibilityConfiguration" label="learnButton"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                     <state key="normal" title="Learn">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,6 +187,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-mo-1WY">
                                                     <rect key="frame" x="289" y="59" width="51" height="31"/>
+                                                    <accessibility key="accessibilityConfiguration" label="signupButton"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="Sign up">
@@ -261,6 +267,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ3-wU-Mwz">
                                                     <rect key="frame" x="335" y="26" width="25" height="25"/>
+                                                    <accessibility key="accessibilityConfiguration" label="cancelButton"/>
                                                     <state key="normal" image="cancel-white"/>
                                                     <connections>
                                                         <action selector="cancelButtonWasTapped:" destination="3HS-Hb-RJ0" eventType="touchUpInside" id="MRF-MW-dm8"/>
@@ -315,6 +322,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-c0-OeI" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="email"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
@@ -363,6 +371,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvZ-8F-2Yz" customClass="BofButton" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="20" width="315" height="40"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration" label="submitButton"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="fMi-eq-GE6"/>
                                                     </constraints>
@@ -420,6 +429,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-LG-vkg">
                                                     <rect key="frame" x="340" y="26" width="25" height="25"/>
+                                                    <accessibility key="accessibilityConfiguration" label="cancel"/>
                                                     <state key="normal" image="cancel-white"/>
                                                     <connections>
                                                         <action selector="cancelButtonTapped:" destination="Ima-ai-o2M" eventType="touchUpInside" id="JWU-0b-uE4"/>
@@ -441,6 +451,9 @@
                                                 <constraint firstItem="Z8O-qF-5tF" firstAttribute="leading" secondItem="aZ0-OQ-quu" secondAttribute="leading" constant="70" id="niH-Dg-CpH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" label="imageCell">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="YOh-Al-ngX">
                                         <rect key="frame" x="0.0" y="320" width="375" height="50"/>
@@ -451,6 +464,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-HL-oiL" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="firstname"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next"/>
@@ -498,6 +512,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0ZZ-pg-sVp" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="lastname"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next"/>
@@ -639,6 +654,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-15-nic" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="passwordConfirm"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES"/>
@@ -686,6 +702,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LBZ-ci-bFB" customClass="BofTextField" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="date"/>
                                                     <gestureRecognizers/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -719,6 +736,7 @@
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIW-Hy-MGQ">
                                                     <rect key="frame" x="30" y="10" width="315" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration" label="dateButton"/>
                                                     <connections>
                                                         <action selector="birthDateHiddenButtonWasTapped:" destination="Ima-ai-o2M" eventType="touchUpInside" id="kIO-xf-cD4"/>
                                                     </connections>
@@ -746,6 +764,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyq-Xf-5Do" customClass="BofButton" customModule="BOF" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="20" width="315" height="40"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration" label="signupButton"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="er7-Kp-y5y"/>
                                                     </constraints>

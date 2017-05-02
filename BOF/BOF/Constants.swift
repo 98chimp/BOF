@@ -104,4 +104,30 @@ struct Constants
             static let poster = "poster"
         }
     }
+    
+    struct AccessibilityLabels
+    {
+        static let email = "email"
+        static let password = "password"
+        static let firstName = "firstName"
+        static let lastName = "lastName"
+        static let passwordConfirm = "passwordConfirm"
+        static let date = "date"
+        static let imageCell = "imageCell"
+        static let singinButton = "signinButton"
+        static let signupButton = "signupButton"
+        static let learnButton = "learnButton"
+        static let forgotButton = "forgotButton"
+        static let cancelButton = "cancelButton"
+        static let skipButton = "skipButton"
+        static let doneButton = "doneButton"
+        static let wecomeImage = "welcomeImage"
+        static let welcomeLabel = "welcomeLabel"
+        static let signupImage = "signupImage"
+        static let signupLabel = "signupLabel"
+        static let inviteImage = "inviteImage"
+        static let inviteLabel = "inviteLabel"
+        static let bofImage = "bofImage"
+        static let bofLabel = "bofLabel"
+    }
 }

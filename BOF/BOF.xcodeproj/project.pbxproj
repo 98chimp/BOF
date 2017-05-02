@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19B9D36BC084AB59752A4661 /* Pods_BOF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE4D92154C631C017EBDA81 /* Pods_BOF.framework */; };
+		3F420ACF947ABEEAEF1D8D00 /* Pods_BOF_BOFUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F530E7F62C8E782F421048 /* Pods_BOF_BOFUITests.framework */; };
 		62EAE58D69079A1717597A3D /* Pods_BOFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3135F055C12C436F23F597AC /* Pods_BOFTests.framework */; };
 		9F7379DBAC9BDE661677AD41 /* Pods_BOFUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1378490ECE73FAD1FC82E386 /* Pods_BOFUITests.framework */; };
 		EB0B65121EB6AE0200D5EE1E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */; };
@@ -24,7 +25,7 @@
 		EB4FAEFA1EB63B7F00E8315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEF81EB63B7F00E8315A /* Main.storyboard */; };
 		EB4FAEFC1EB63B7F00E8315A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEFB1EB63B7F00E8315A /* Assets.xcassets */; };
 		EB4FAEFF1EB63B7F00E8315A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEFD1EB63B7F00E8315A /* LaunchScreen.storyboard */; };
-		EB4FAF0A1EB63B8000E8315A /* BOFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF091EB63B8000E8315A /* BOFTests.swift */; };
+		EB4FAF0A1EB63B8000E8315A /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF091EB63B8000E8315A /* UserTests.swift */; };
 		EB4FAF151EB63B8000E8315A /* BOFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF141EB63B8000E8315A /* BOFUITests.swift */; };
 		EB4FAF2D1EB64ECC00E8315A /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF2C1EB64ECC00E8315A /* Signin.storyboard */; };
 		EB4FAF2F1EB64EE300E8315A /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAF2E1EB64EE300E8315A /* Welcome.storyboard */; };
@@ -66,11 +67,14 @@
 /* Begin PBXFileReference section */
 		1378490ECE73FAD1FC82E386 /* Pods_BOFUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOFUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C42A8EB150AAF8200A790A1 /* Pods-BOFUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOFUITests/Pods-BOFUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2DA6FAE0579F22EF16351EFF /* Pods-BOF-BOFUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOF-BOFUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOF-BOFUITests/Pods-BOF-BOFUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3135F055C12C436F23F597AC /* Pods_BOFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32024F4C0A67DA398141E9A9 /* Pods-BOF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOF.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOF/Pods-BOF.release.xcconfig"; sourceTree = "<group>"; };
 		3D9C1962478B7A7B96C2FFEB /* Pods-BOFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOFTests/Pods-BOFTests.release.xcconfig"; sourceTree = "<group>"; };
 		5CE4D92154C631C017EBDA81 /* Pods_BOF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC372DB484B666663BE8F757 /* Pods-BOF-BOFUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOF-BOFUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOF-BOFUITests/Pods-BOF-BOFUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF3A1FC30BB1ACB0ED8D6927 /* Pods-BOFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOFTests/Pods-BOFTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3F530E7F62C8E782F421048 /* Pods_BOF_BOFUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOF_BOFUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02140C86B9F4A6AFCD2966A /* Pods-BOF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOF/Pods-BOF.debug.xcconfig"; sourceTree = "<group>"; };
 		DD165CAA43DADED421E74D89 /* Pods-BOFUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOFUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOFUITests/Pods-BOFUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -90,7 +94,7 @@
 		EB4FAEFE1EB63B7F00E8315A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4FAF001EB63B7F00E8315A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4FAF051EB63B8000E8315A /* BOFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB4FAF091EB63B8000E8315A /* BOFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOFTests.swift; sourceTree = "<group>"; };
+		EB4FAF091EB63B8000E8315A /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		EB4FAF0B1EB63B8000E8315A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4FAF101EB63B8000E8315A /* BOFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4FAF141EB63B8000E8315A /* BOFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOFUITests.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninTableViewController.swift; sourceTree = "<group>"; };
 		EB4FAF421EB694F600E8315A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB57CF291EB8891E00008C83 /* MutableCollection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Extensions.swift"; sourceTree = "<group>"; };
+		EB57CF2B1EB8B84700008C83 /* BOFUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BOFUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		EBAB769C1EB7E462008CBFF7 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		EBAB769E1EB802B1008CBFF7 /* NewPostProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostProtocol.swift; sourceTree = "<group>"; };
@@ -137,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7379DBAC9BDE661677AD41 /* Pods_BOFUITests.framework in Frameworks */,
+				3F420ACF947ABEEAEF1D8D00 /* Pods_BOF_BOFUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,7 @@
 				5CE4D92154C631C017EBDA81 /* Pods_BOF.framework */,
 				3135F055C12C436F23F597AC /* Pods_BOFTests.framework */,
 				1378490ECE73FAD1FC82E386 /* Pods_BOFUITests.framework */,
+				B3F530E7F62C8E782F421048 /* Pods_BOF_BOFUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +169,8 @@
 				3D9C1962478B7A7B96C2FFEB /* Pods-BOFTests.release.xcconfig */,
 				DD165CAA43DADED421E74D89 /* Pods-BOFUITests.debug.xcconfig */,
 				1C42A8EB150AAF8200A790A1 /* Pods-BOFUITests.release.xcconfig */,
+				2DA6FAE0579F22EF16351EFF /* Pods-BOF-BOFUITests.debug.xcconfig */,
+				AC372DB484B666663BE8F757 /* Pods-BOF-BOFUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -253,7 +262,7 @@
 		EB4FAF081EB63B8000E8315A /* BOFTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB4FAF091EB63B8000E8315A /* BOFTests.swift */,
+				EB4FAF091EB63B8000E8315A /* UserTests.swift */,
 				EB4FAF0B1EB63B8000E8315A /* Info.plist */,
 			);
 			path = BOFTests;
@@ -263,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4FAF141EB63B8000E8315A /* BOFUITests.swift */,
+				EB57CF2B1EB8B84700008C83 /* BOFUITests-Bridging-Header.h */,
 				EB4FAF161EB63B8000E8315A /* Info.plist */,
 			);
 			path = BOFUITests;
@@ -701,7 +711,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB4FAF0A1EB63B8000E8315A /* BOFTests.swift in Sources */,
+				EB4FAF0A1EB63B8000E8315A /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +917,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6X85PLZ26L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KIF\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FaveButton\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/M13ProgressSuite\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RMActionController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RMDateSelectionViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SZTextView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SkyFloatingLabelTextField\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ThunderCats\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UICKeyChainStore\"",
+				);
 				INFOPLIST_FILE = BOFUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.98chimp.BOFUITests;
@@ -922,6 +946,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6X85PLZ26L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KIF\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FaveButton\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/M13ProgressSuite\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RMActionController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RMDateSelectionViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SZTextView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SkyFloatingLabelTextField\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ThunderCats\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UICKeyChainStore\"",
+				);
 				INFOPLIST_FILE = BOFUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.98chimp.BOFUITests;

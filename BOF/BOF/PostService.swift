@@ -27,28 +27,30 @@ class PostService
                                          ["content": "In conclusion, understanding still leaves you standing.",
                                           "poster": ["firstName": "Randall", "lastName": "Shelton"]],
                                          ["content": "Jaden says: Why do we go to school again? Epic.",
-                                          "poster": ["firstName": "Lida", "lastName": "Nunez"]],]]
+                                          "poster": ["firstName": "Lida", "lastName": "Nunez"]]]]
     
     private let updatedJSON = ["posts": [["content": "In Conclusion, You Sound Like You Still Think Mirrors Are Real. I Know This From First Hand Experience.",
                                           "poster": ["firstName": "Lela", "lastName": "Burns"]],
                                          ["content": "FYI Haters, A Mirror Is Only A Prison For Your Reflection. And No, My Twitter Has Not Been Hacked.",
                                           "poster": ["firstName": "Lela", "lastName": "Burns"]],
                                          ["content": "Girl, You So Fine. But A Mirror Is Only A Prison For Your Reflection. Now, If You Excuse Me, I Have To Go Stare In The Mirror And Cry.",
-                                          "poster": ["firstName": "May", "lastName": "Cunningham"]],
+                                          "poster": ["firstName": "Shahin", "lastName": "Zangenehpour"]],
                                          ["content": "No One Teaches School To Teach. This Is Why Nobody Gets Me.",
                                           "poster": ["firstName": "Randall", "lastName": "Shelton"]],
                                          ["content": "We Are All Time Travellers.",
                                           "poster": ["firstName": "Lida", "lastName": "Nunez"]],
                                          ["content": "Jaden Says: A Mindframe Is Still A Frame. You're Welcome.",
-                                           "poster": ["firstName": "Randall", "lastName": "Shelton"]],
+                                           "poster": ["firstName": "Shahin", "lastName": "Zangenehpour"]],
                                           ["content": "FYI Haters, These Thoughts Are Immortal. You Can Have That One For Free.",
                                            "poster": ["firstName": "Lela", "lastName": "Burns"]],
                                           ["content": "There Ain't Room In This Oxygen Chamber For Two. Totally Unrelated, I Just Saw Day After Tomorrow Again. Shit Is Dope.",
                                            "poster": ["firstName": "May", "lastName": "Cunningham"]],
                                           ["content": "Meet Me On FaceTime And Let's Talk About SpaceTime.",
-                                           "poster": ["firstName": "Randall", "lastName": "Shelton"]],
+                                           "poster": ["firstName": "Shahin", "lastName": "Zangenehpour"]],
                                           ["content": "Listen, Age Isn't A Religion. You Can Have That One For Free.",
-                                           "poster": ["firstName": "Randall", "lastName": "Shelton"]],]]
+                                           "poster": ["firstName": "Randall", "lastName": "Shelton"]],
+                                          ["content": "Those who can make you believe absurdities, can make you commit atrocities. ~Voltaire",
+                                           "poster": ["firstName": "Shahin", "lastName": "Zangenehpour"]]]]
     
     // MARK: - Init
     init()

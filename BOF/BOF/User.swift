@@ -24,8 +24,6 @@ class User
     var birthDate = Date()
     var token = ""
     var isSignedIn = false
-    var posts = [Post]()
-    var buddies = [User]()
 
     // MARK: - Parsers
     func parse(json: [String:Any]) -> User
@@ -36,7 +34,6 @@ class User
         user.lastName = json[userKeys.lastName] as! String
         user.email = json[userKeys.email] as! String
         user.password = json[userKeys.password] as! String
-        user.birthDate = json[userKeys.birthDate] as! Date
         
         return user
     }

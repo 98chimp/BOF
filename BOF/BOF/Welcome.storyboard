@@ -25,6 +25,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-Ng-6cc">
                                 <rect key="frame" x="67" y="109.5" width="241" height="241"/>
+                                <accessibility key="accessibilityConfiguration" label="welcomeImage">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="I1d-Ng-6cc" secondAttribute="height" multiplier="1:1" id="iHp-ig-T6J"/>
                                 </constraints>
@@ -34,6 +37,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bA5-Qx-wZc">
                                         <rect key="frame" x="59.5" y="0.0" width="106.5" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="welcomeLabel"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -48,6 +52,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kd-2h-rUW">
                                 <rect key="frame" x="329" y="28" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="skipButton"/>
                                 <state key="normal" title="skip">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -94,6 +99,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="ehQ-BK-Gk8">
                                 <rect key="frame" x="67" y="109.5" width="241" height="241"/>
+                                <accessibility key="accessibilityConfiguration" label="signupImage">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ehQ-BK-Gk8" secondAttribute="height" multiplier="1:1" id="hPC-72-uft"/>
                                 </constraints>
@@ -103,6 +111,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCN-Fu-3rc">
                                         <rect key="frame" x="74" y="0.0" width="86.5" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="signupLabel"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -117,6 +126,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0G-FQ-wVB">
                                 <rect key="frame" x="329" y="28" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="skipButton"/>
                                 <state key="normal" title="skip">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -155,6 +165,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite" translatesAutoresizingMaskIntoConstraints="NO" id="8Ju-fi-3aX">
                                 <rect key="frame" x="67" y="109.5" width="241" height="241"/>
+                                <accessibility key="accessibilityConfiguration" label="inviteImage">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8Ju-fi-3aX" secondAttribute="height" multiplier="1:1" id="e0B-Ar-MDj"/>
                                 </constraints>
@@ -164,6 +177,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4S-uC-0nc">
                                         <rect key="frame" x="77" y="0.0" width="62" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="inviteLabel"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -178,6 +192,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n4-Uz-PBN">
                                 <rect key="frame" x="329" y="28" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="skipButton"/>
                                 <state key="normal" title="skip">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -217,6 +232,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m19-PC-Gs6">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="doneButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Tef-S4-wPX"/>
                                 </constraints>
@@ -231,6 +247,9 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1do-5P-kqg">
                                 <rect key="frame" x="67" y="109.5" width="241" height="241"/>
+                                <accessibility key="accessibilityConfiguration" label="bofImage">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1do-5P-kqg" secondAttribute="height" multiplier="1:1" id="8ql-Cg-hGR"/>
                                 </constraints>
@@ -240,6 +259,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bof!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-rE-4ax">
                                         <rect key="frame" x="99" y="0.0" width="46.5" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="bofLabel"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
