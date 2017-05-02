@@ -87,7 +87,10 @@ class NewPostViewController: UIViewController, UITextViewDelegate
         }
         else
         {
-            delegate?.handleNewPost()
+            let post = Post()
+            post.content = postTextView.text
+            post.poster = currentUser
+            delegate?.handleNew(post)
             dismiss(animated: true, completion: nil)
         }
     }

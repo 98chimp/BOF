@@ -10,5 +10,5 @@ import Foundation
 
 protocol NewPostProtocol
 {
-    func handleNewPost()
+    func handleNew(_ post: Post)
 }

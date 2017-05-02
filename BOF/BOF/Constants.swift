@@ -97,5 +97,11 @@ struct Constants
             static let password = "password"
             static let token = "token"
         }
+        
+        struct Post
+        {
+            static let content = "content"
+            static let poster = "poster"
+        }
     }
 }

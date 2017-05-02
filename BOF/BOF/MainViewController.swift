@@ -19,12 +19,14 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // MARK: - Properties
     fileprivate let currentUser = User.current
+    fileprivate var datasource = [Post]()
     
     // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setupUI()
+        datasource = PostService.shared.mockedPosts
     }
     
     // MARK: - Helpers
@@ -44,13 +46,15 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: - TableView Data Source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 1
+        return datasource.count
     }
     
     // MARK: - TableView Delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cells.postCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cells.postCell, for: indexPath) as! PostTableViewCell
+        let post = datasource.reversed()[indexPath.row]
+        cell.configure(with: post)
         return cell
     }
     
@@ -70,14 +74,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-    func handleNewPost() {
-        execute(after: 1.0) {
-            self.postsTableView.backgroundColor = .bofYellow
-            execute(after: 0.5) {
-                self.postsTableView.backgroundColor = .bofOrange
-            }
-        }
-        
-        print("addingNewPost")
+    func handleNew(_ post: Post)
+    {
+        datasource.append(post)
+        let indexPath = IndexPath(row: 0, section: 0)
+        postsTableView.beginUpdates()
+        postsTableView.insertRows(at: [indexPath], with: .automatic)
+        postsTableView.endUpdates()
     }
 }

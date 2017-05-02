@@ -10,7 +10,20 @@ import Foundation
 
 class Post
 {
-    var poster: User?
+    typealias postKeys = Constants.Models.Post
+    
+    // MARK: - Properties
     var content = ""
-    var dateCreated = Date()
+    var poster: User?
+    
+    // MARK: - Parsers
+    static func parse(_ json: [String:Any]) -> Post
+    {
+        let post = Post()
+        
+        post.content = json[postKeys.content] as! String
+        post.poster = User.parse(json[postKeys.poster] as! [String: Any])
+        
+        return post
+    }
 }

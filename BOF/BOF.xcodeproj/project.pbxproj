@@ -18,6 +18,7 @@
 		EB0B65201EB6D28400D5EE1E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B651F1EB6D28400D5EE1E /* UIAlertController+Extensions.swift */; };
 		EB0B65231EB6DDD500D5EE1E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65221EB6DDD500D5EE1E /* WelcomeViewController.swift */; };
 		EB0B65251EB6DDEC00D5EE1E /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B65241EB6DDEB00D5EE1E /* WelcomePageViewController.swift */; };
+		EB4111F01EB8618300CF3092 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4111EF1EB8618300CF3092 /* PostTableViewCell.swift */; };
 		EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */; };
 		EB4FAEF71EB63B7F00E8315A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */; };
 		EB4FAEFA1EB63B7F00E8315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4FAEF81EB63B7F00E8315A /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		EB0B651F1EB6D28400D5EE1E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		EB0B65221EB6DDD500D5EE1E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EB0B65241EB6DDEB00D5EE1E /* WelcomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		EB4111EF1EB8618300CF3092 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		EB4FAEF11EB63B7F00E8315A /* BOF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4FAEF41EB63B7F00E8315A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4FAEF61EB63B7F00E8315A /* MainViewController.swift */,
+				EB4111EF1EB8618300CF3092 /* PostTableViewCell.swift */,
 				EBAB769C1EB7E462008CBFF7 /* NewPostViewController.swift */,
 			);
 			name = Main;
@@ -674,6 +677,7 @@
 				EBAB76E11EB83036008CBFF7 /* PostService.swift in Sources */,
 				EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */,
 				EBAB76DD1EB82C05008CBFF7 /* Post.swift in Sources */,
+				EB4111F01EB8618300CF3092 /* PostTableViewCell.swift in Sources */,
 				EB0B651B1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift in Sources */,
 				EBAB769D1EB7E462008CBFF7 /* NewPostViewController.swift in Sources */,
 				EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */,

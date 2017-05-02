@@ -27,8 +27,8 @@ class User
     var posts = [Post]()
     var buddies = [User]()
 
-    // MARK: - Parser(s)
-    func parse(json:[String:Any]) -> User
+    // MARK: - Parsers
+    func parse(json: [String:Any]) -> User
     {
         let user = User()
         
@@ -41,15 +41,25 @@ class User
         return user
     }
     
+    static func parse(_ poster: [String: Any]) -> User
+    {
+        let user = User()
+        
+        user.firstName = poster[userKeys.firstName] as! String
+        user.lastName = poster[userKeys.lastName] as! String
+        
+        return user
+    }
+    
     // MARK: - Zipper(s)
     func zipForLocalStorage() -> [String: Any]
     {
-        var userDict:[String:Any] = [:]
+        var userDict:[String: Any] = [:]
         
         userDict[userKeys.firstName] = firstName as Any?
         userDict[userKeys.lastName] = lastName as Any?
         userDict[userKeys.birthDate] = birthDate as Any?
-        userDict[userKeys.bofHandle] = bofHandle as Any?
+        userDict[userKeys.bofHandle] = bofHandle() as Any?
         
         return userDict
     }
@@ -77,7 +87,10 @@ class User
     {
         if firstName != "" && lastName != ""
         {
-            return "@\(firstName.lowercased())\(String(describing: lastName.characters.first).lowercased())"
+            if let lastInitial = lastName.lowercased().characters.first
+            {
+                return "@\(firstName.lowercased())\(lastInitial)"
+            }
         }
         else if firstName != ""
         {
