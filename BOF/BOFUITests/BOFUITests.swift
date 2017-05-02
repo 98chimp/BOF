@@ -18,7 +18,5 @@ class SigninVCTest: KIFTestCase
         tester().waitForView(withAccessibilityLabel: access.email)
         tester().tapView(withAccessibilityLabel: access.email)
         tester().clearText(fromAndThenEnterText: "test@tester.com", intoViewWithAccessibilityLabel: access.email)
-
-
     }
 }
