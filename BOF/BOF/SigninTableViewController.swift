@@ -56,23 +56,22 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
     {
         if let email = emailTextField.text, let password = passwordTextField.text, isEmailFieldValid() && isPasswordFieldValid()
         {
-            if user.token == ""
+            
+            if (email, password, user.token) == SessionService.shared.retrieveCredentials()
+            {
+                user.email = email
+                user.password = password
+                SessionService.shared.signin(user)
+                
+                performSegue(withIdentifier: segues.toMainStoryboard, sender: user)
+            }
+            else
             {
                 let alert = AlertService.prepareSignupRequestAlert()
                 alert.addAction(withTitle: "Okay", style: .default, handler: {
                     self.performSegue(withIdentifier: segues.toSignupScreen, sender: self)
                 })
                 present(alert, animated: true, completion: nil)
-            }
-            else
-            {
-                user.email = email
-                user.password = password
-                SessionService.shared.storeCredentialsFor(user)
-                SessionService.shared.storeUserInfo(user.zipForLocalStorage())
-                SessionService.shared.signin(user)
-                
-                performSegue(withIdentifier: segues.toMainStoryboard, sender: user)
             }
         }
         else
@@ -152,20 +151,34 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
         handleSignin()
     }
     
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == segues.toSignupScreen
+        {
+            let destinationVC = segue.destination as? SignupTableViewController
+            destinationVC?.delegate = self
+        }
+    }
+    
     // MARK: - Protocols
     func handleSignupSucess()
     {
         user.token = UUID().uuidString
         
         execute(after: 1.0) {
-            self.emailTextField.text = self.user.email
-            self.passwordTextField.text = self.user.password
-            
             self.hud?.show(true)
             execute(after: 2.0) {
                 self.presentHUDSuccess()
+                self.emailTextField.text = self.user.email
+                self.passwordTextField.text = self.user.password
+                
                 execute(after: 1.0) {
                     self.hud?.dismiss(true)
+                    
+                    SessionService.shared.storeCredentialsFor(self.user)
+                    SessionService.shared.storeUserInfo(self.user.zipForLocalStorage())
+
                     self.present(AlertService.prepareSuccessfulSignupAlert() , animated: true, completion: nil)
                 }
             }
