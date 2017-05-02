@@ -22,14 +22,13 @@ class User
     var email = ""
     var password = ""
     var birthDate = Date()
-    var bofHandle: String
-    {
-        return "@\(firstName)\(String(describing: lastName.characters.first))"
-    }
     var token = ""
+    var isSignedIn = false
+    var posts = [Post]()
+    var buddies = [User]()
 
-    //MARK: - Parser(s)
-    func parse(json:[String:Any]) -> User
+    // MARK: - Parsers
+    func parse(json: [String:Any]) -> User
     {
         let user = User()
         
@@ -42,15 +41,25 @@ class User
         return user
     }
     
-    //MARK: - Zipper(s)
+    static func parse(_ poster: [String: Any]) -> User
+    {
+        let user = User()
+        
+        user.firstName = poster[userKeys.firstName] as! String
+        user.lastName = poster[userKeys.lastName] as! String
+        
+        return user
+    }
+    
+    // MARK: - Zipper(s)
     func zipForLocalStorage() -> [String: Any]
     {
-        var userDict:[String:Any] = [:]
+        var userDict:[String: Any] = [:]
         
         userDict[userKeys.firstName] = firstName as Any?
         userDict[userKeys.lastName] = lastName as Any?
         userDict[userKeys.birthDate] = birthDate as Any?
-        userDict[userKeys.bofHandle] = bofHandle as Any?
+        userDict[userKeys.bofHandle] = bofHandle() as Any?
         
         return userDict
     }
@@ -69,6 +78,27 @@ class User
         else if  lastName != ""
         {
             return lastName
+        }
+        
+        return ""
+    }
+    
+    func bofHandle() -> String
+    {
+        if firstName != "" && lastName != ""
+        {
+            if let lastInitial = lastName.lowercased().characters.first
+            {
+                return "@\(firstName.lowercased())\(lastInitial)"
+            }
+        }
+        else if firstName != ""
+        {
+            return "@\(firstName.lowercased())"
+        }
+        else if  lastName != ""
+        {
+            return "@\(lastName.lowercased())"
         }
         
         return ""

@@ -164,7 +164,6 @@ class SignupTableViewController: BaseTableViewController
             user.email = emailTextField.text!
             user.password = passwordTextField.text!
             
-            delegate = presentingViewController as? SignupSuccessProtocol
             delegate?.handleSignupSucess()
 
             dismiss(animated: true, completion: nil)

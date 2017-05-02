@@ -14,10 +14,10 @@ class SessionService
     fileprivate typealias userDefaultKeys = Constants.UserDefaultKeys
     fileprivate typealias keychainKeys = Constants.UICKeyChainStoreKeys
     
-    //MARK: - Properties
+    // MARK: - Properties
     static let shared = SessionService()
     
-    //MARK: - Keychain Store
+    // MARK: - Keychain Store
     func storeCredentialsFor(_ user: User)
     {
         storeEmail(user.email)
@@ -33,6 +33,16 @@ class SessionService
     func clearKeychain()
     {
         UICKeyChainStore.removeAllItems()
+    }
+    
+    func signout(_ user: User)
+    {
+        user.isSignedIn = false
+    }
+    
+    func signin(_ user: User)
+    {
+        user.isSignedIn = true
     }
     
     fileprivate func storeEmail(_ email: String)
@@ -65,7 +75,7 @@ class SessionService
         return UICKeyChainStore.string(forKey: keychainKeys.token) ?? ""
     }
     
-    //MARK: - User Defaults
+    // MARK: - User Defaults
     func storeUserInfo(_ userInfo: [String: Any])
     {
         UserDefaults.standard.set(userInfo, forKey: userDefaultKeys.userInfo)
@@ -93,5 +103,4 @@ class SessionService
     {
         return UserDefaults.standard.bool(forKey: userDefaultKeys.isSavedToKeychain)
     }
-
 }

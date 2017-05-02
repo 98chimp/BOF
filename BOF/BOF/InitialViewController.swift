@@ -36,6 +36,7 @@ class InitialViewController: UIViewController
     {
         super.viewDidAppear(animated)
         simulateNetworkCall()
+//        configureHUD()
     }
     
     // MARK: - Helpers
@@ -75,7 +76,7 @@ class InitialViewController: UIViewController
     {
         hud?.dismiss(true)
         
-        if SessionService.shared.retrieveCredentials().2 == ""
+        if SessionService.shared.retrieveCredentials().2 == "" || !currentUser.isSignedIn
         {
             performSegue(withIdentifier: segues.toSigninStoryboard, sender: self)
         }
