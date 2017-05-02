@@ -21,3 +21,8 @@ On the first launch, an initial sign up is required to securely store the userna
 Both Unit and UI/KIF tests were written to conduct automated QA for the app. Unfortunately, an obscure issue with KIF framework installation via Cocoapods prevented extensive UI testing of the app. In the interest of time, sample tests were left in place to demonstrate the idea behind automated testing.
 
 In addition, the app was subject to extensive user testing on 3 separate iPhone devices (5S, 6 and 6Plus) by multiple users.
+
+### UPDATE
+The KIF issue affected all three of my work projects today. I have now identified and applied an effective fix to restore UI testing using KIF for those projects.
+
+I shall do the same for this project later this evening (May 2, 2017).
