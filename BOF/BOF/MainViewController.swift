@@ -20,13 +20,15 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: - Properties
     fileprivate let currentUser = User.current
     fileprivate var datasource = [Post]()
-    
+    fileprivate let refreshControl = UIRefreshControl()
+
     // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         setupUI()
         datasource = PostService.shared.mockedPosts
+        Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(checkForNewPosts), userInfo: nil, repeats: true)
     }
     
     // MARK: - Helpers
@@ -41,6 +43,29 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let logo = UIImage(named: "logo small")
         let imageView = UIImageView(image: logo)
         navigationItem.titleView = imageView
+        
+        if #available(iOS 10.0, *)
+        {
+            postsTableView.refreshControl = refreshControl
+        }
+        else
+        {
+            postsTableView.addSubview(refreshControl)
+        }
+        refreshControl.addTarget(self, action: #selector(updatePosts), for: .valueChanged)
+        refreshControl.tintColor = .white
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching New Posts ...", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 14.0), NSForegroundColorAttributeName: UIColor.white])
+    }
+    
+    @objc fileprivate func checkForNewPosts()
+    {
+        if PostService.shared.areNewPostsAvailable
+        {
+            navigationItem.titleView?.bounce()
+            execute(after: 1.0, closure: {
+                self.navigationItem.titleView?.bounce()
+            })
+        }
     }
 
     // MARK: - TableView Data Source
@@ -63,6 +88,17 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     {
         SessionService.shared.signout(currentUser)
         dismiss(animated: true, completion: nil)
+    }
+    
+    @objc fileprivate func updatePosts()
+    {
+        PostService.shared.fetchNewPosts()
+        execute(after: 2.0) {
+            self.datasource += PostService.shared.mockedPosts
+            self.postsTableView.reloadData()
+            PostService.shared.areNewPostsAvailable = false
+            self.refreshControl.endRefreshing()
+        }
     }
     
     // MARK: - Navigation

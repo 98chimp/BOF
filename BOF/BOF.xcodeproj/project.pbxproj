@@ -38,6 +38,7 @@
 		EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */; };
 		EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */; };
 		EB4FAF431EB694F600E8315A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF421EB694F600E8315A /* User.swift */; };
+		EB57CF2A1EB8891E00008C83 /* MutableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB57CF291EB8891E00008C83 /* MutableCollection+Extensions.swift */; };
 		EB9B0BD71EB6F04A00C6DDB5 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */; };
 		EBAB769D1EB7E462008CBFF7 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB769C1EB7E462008CBFF7 /* NewPostViewController.swift */; };
 		EBAB769F1EB802B1008CBFF7 /* NewPostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB769E1EB802B1008CBFF7 /* NewPostProtocol.swift */; };
@@ -106,6 +107,7 @@
 		EB4FAF3E1EB68ECA00E8315A /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninTableViewController.swift; sourceTree = "<group>"; };
 		EB4FAF421EB694F600E8315A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB57CF291EB8891E00008C83 /* MutableCollection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Extensions.swift"; sourceTree = "<group>"; };
 		EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		EBAB769C1EB7E462008CBFF7 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		EBAB769E1EB802B1008CBFF7 /* NewPostProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostProtocol.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				EB4FAF341EB67DC200E8315A /* UIColor+Extensions.swift */,
 				EB0B65111EB6AE0200D5EE1E /* UIView+Extensions.swift */,
 				EB0B651F1EB6D28400D5EE1E /* UIAlertController+Extensions.swift */,
+				EB57CF291EB8891E00008C83 /* MutableCollection+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				EB4FAF3F1EB68ECA00E8315A /* BaseTableViewController.swift in Sources */,
 				EBAB76DD1EB82C05008CBFF7 /* Post.swift in Sources */,
 				EB4111F01EB8618300CF3092 /* PostTableViewCell.swift in Sources */,
+				EB57CF2A1EB8891E00008C83 /* MutableCollection+Extensions.swift in Sources */,
 				EB0B651B1EB6D03A00D5EE1E /* ForgotPasswordTableViewController.swift in Sources */,
 				EBAB769D1EB7E462008CBFF7 /* NewPostViewController.swift in Sources */,
 				EB4FAEF51EB63B7F00E8315A /* AppDelegate.swift in Sources */,

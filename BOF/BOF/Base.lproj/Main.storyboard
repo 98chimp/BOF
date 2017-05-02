@@ -296,6 +296,6 @@
         <image name="post button default" width="116" height="36"/>
         <image name="post button disabled" width="116" height="36"/>
         <image name="post button highlighted" width="116" height="36"/>
-        <image name="profile pic" width="32" height="32"/>
+        <image name="profile pic" width="52" height="52"/>
     </resources>
 </document>
