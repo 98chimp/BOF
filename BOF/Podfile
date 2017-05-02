@@ -13,6 +13,7 @@ target 'BOF' do
   pod 'RMDateSelectionViewController'
   pod 'FaveButton', '~> 2.0.3'
   pod 'UICKeyChainStore'
+  pod 'SZTextView'
 
   target 'BOFTests' do
     inherit! :search_paths

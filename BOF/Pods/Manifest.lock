@@ -9,6 +9,7 @@ PODS:
   - RMDateSelectionViewController (2.2.1):
     - RMActionController (~> 1.2.1)
   - SkyFloatingLabelTextField (2.0.1)
+  - SZTextView (1.2.2)
   - ThunderCats (2.1.0)
   - UICKeyChainStore (2.1.0)
 
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - PureLayout (~> 3.0)
   - RMDateSelectionViewController
   - SkyFloatingLabelTextField (~> 2.0)
+  - SZTextView
   - ThunderCats (~> 2.1)
   - UICKeyChainStore
 
@@ -30,9 +32,10 @@ SPEC CHECKSUMS:
   RMActionController: e516bc0651a61d675abb5eaf09ee79a92ae6155c
   RMDateSelectionViewController: 81b9251420345c793921b7516b77a9c80be7d399
   SkyFloatingLabelTextField: 070e749632ffd608d6fd9db3fa488a822524997c
+  SZTextView: 3a81174dce0710a9ab069bc73a813e6df53b9c82
   ThunderCats: 230e83861086834b920fd1402c2c8a0a5d958247
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
-PODFILE CHECKSUM: f1e32e4fff5aeb626d03731fb5b0601844ee6190
+PODFILE CHECKSUM: 20c6226e57ce9e5b39e56ff0f9549728caab511b
 
 COCOAPODS: 1.2.0

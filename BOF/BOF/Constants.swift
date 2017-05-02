@@ -35,15 +35,15 @@ struct Constants
         static let welcome2VC = "Welcome2VC"
         static let welcome3VC = "Welcome3VC"
         static let welcome4VC = "Welcome4VC"
-        static let mainVC = ""
-        static let addPostVC = ""
+        static let mainVC = "MainViewController"
+        static let newPostVC = "NewPostViewController"
     }
 
     struct Identifiers
     {
         struct Cells
         {
-            
+            static let postCell = "postCell"
         }
         
         struct Segues
@@ -53,6 +53,7 @@ struct Constants
             static let toForgotPasswordScreen = "toForgotPasswordScreen"
             static let toWelcomeStoryboard = "toWelcomeStoryboard"
             static let toSignupScreen = "toSignupScreen"
+            static let toNewPostScreen = "toNewPostScreen"
         }
     }
     

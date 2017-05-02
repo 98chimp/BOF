@@ -27,6 +27,7 @@ class User
         return "@\(firstName)\(String(describing: lastName.characters.first))"
     }
     var token = ""
+    var isSignedIn = false
 
     //MARK: - Parser(s)
     func parse(json:[String:Any]) -> User

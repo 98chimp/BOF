@@ -25,6 +25,12 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
         setupUI()
     }
     
+    override func viewDidDisappear(_ animated: Bool)
+    {
+        super.viewDidDisappear(animated)
+        clearTextFields()
+    }
+    
     // MARK: - Helpers
     fileprivate func setupUI()
     {
@@ -64,6 +70,7 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
                 user.password = password
                 SessionService.shared.storeCredentialsFor(user)
                 SessionService.shared.storeUserInfo(user.zipForLocalStorage())
+                SessionService.shared.signin(user)
                 
                 performSegue(withIdentifier: segues.toMainStoryboard, sender: user)
             }
@@ -80,6 +87,12 @@ class SigninTableViewController: BaseTableViewController, SignupSuccessProtocol
                 passwordTextField.shake()
             }
         }
+    }
+    
+    fileprivate func clearTextFields()
+    {
+        emailTextField.text = ""
+        passwordTextField.text = ""
     }
     
     // MARK: - TableView Delegate

@@ -35,6 +35,16 @@ class SessionService
         UICKeyChainStore.removeAllItems()
     }
     
+    func signout(_ user: User)
+    {
+        user.isSignedIn = false
+    }
+    
+    func signin(_ user: User)
+    {
+        user.isSignedIn = true
+    }
+    
     fileprivate func storeEmail(_ email: String)
     {
         UICKeyChainStore.setString(email, forKey: keychainKeys.email)
@@ -93,5 +103,4 @@ class SessionService
     {
         return UserDefaults.standard.bool(forKey: userDefaultKeys.isSavedToKeychain)
     }
-
 }
