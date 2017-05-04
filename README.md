@@ -30,6 +30,7 @@ In addition, the app was subject to extensive user testing on 3 separate iPhone 
 * FaveButton (https://github.com/xhamr/fave-button)
 * UICKeyChainStore (https://github.com/kishikawakatsumi/UICKeyChainStore)
 * SZTextView (https://github.com/glaszig/SZTextView)
+* KIF (https://github.com/kif-framework/KIF)
 
 
 ### UPDATE
