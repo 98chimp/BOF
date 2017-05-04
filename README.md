@@ -22,7 +22,7 @@ Both Unit and UI/KIF tests were written to conduct automated QA for the app. Unf
 
 In addition, the app was subject to extensive user testing on 3 separate iPhone devices (5S, 6 and 6Plus) by multiple users.
 
-## Libaries Used
+## Libraries Used
 * ThunderCats (https://github.com/metova/ThunderCats)
 * SkyFloatingLabelTextField (https://github.com/Skyscanner/SkyFloatingLabelTextField)
 * M13ProgressSuite (https://github.com/Marxon13/M13ProgressSuite)
