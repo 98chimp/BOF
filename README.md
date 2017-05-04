@@ -22,6 +22,16 @@ Both Unit and UI/KIF tests were written to conduct automated QA for the app. Unf
 
 In addition, the app was subject to extensive user testing on 3 separate iPhone devices (5S, 6 and 6Plus) by multiple users.
 
+## Libaries Used
+* [ThunderCats] (https://github.com/metova/ThunderCats)
+* SkyFloatingLabelTextField
+* M13ProgressSuite
+* RMDateSelectionViewController
+* FaveButton
+* UICKeyChainStore
+* SZTextView
+
+
 ### UPDATE
 The KIF issue mentioned above affected all three of my work projects today. I have now identified and applied an effective fix to restore UI testing using KIF for those projects.
 
