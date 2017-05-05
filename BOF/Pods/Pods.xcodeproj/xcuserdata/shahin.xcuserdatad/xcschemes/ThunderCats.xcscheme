@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1147EA0C3E353900A25974BF28411466'
+               BlueprintIdentifier = '3C66A7765D9826C85D6E9C722164121C'
                BlueprintName = 'ThunderCats'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ThunderCats.framework'>

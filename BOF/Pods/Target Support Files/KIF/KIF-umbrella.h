@@ -38,6 +38,7 @@
 #import "UIWindow-KIFAdditions.h"
 #import "XCTestCase-KIFAdditions.h"
 #import "UIView-Debugging.h"
+#import "KIFUITestActor-IdentifierTests.h"
 
 FOUNDATION_EXPORT double KIFVersionNumber;
 FOUNDATION_EXPORT const unsigned char KIFVersionString[];

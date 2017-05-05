@@ -43,9 +43,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB4FAF0F1EB63B8000E8315A"
-               BuildableName = "BOFUITests.xctest"
-               BlueprintName = "BOFUITests"
+               BlueprintIdentifier = "EB27C1C81EB93C880070F9A6"
+               BuildableName = "KIFTests.xctest"
+               BlueprintName = "KIFTests"
                ReferencedContainer = "container:BOF.xcodeproj">
             </BuildableReference>
          </TestableReference>
