@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BOFUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BOFUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_KIFTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_KIFTestsVersionString[];
 

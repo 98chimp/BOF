@@ -1,10 +1,11 @@
 PODS:
   - FaveButton (2.0.3)
-  - KIF (3.5.1):
-    - KIF/Core (= 3.5.1)
-  - KIF/Core (3.5.1)
+  - KIF (3.5.2):
+    - KIF/Core (= 3.5.2)
+  - KIF/Core (3.5.2)
+  - KIF/IdentifierTests (3.5.2):
+    - KIF/Core
   - M13ProgressSuite (1.2.9)
-  - PureLayout (3.0.2)
   - RMActionController (1.2.1)
   - RMDateSelectionViewController (2.2.1):
     - RMActionController (~> 1.2.1)
@@ -16,8 +17,8 @@ PODS:
 DEPENDENCIES:
   - FaveButton (~> 2.0.3)
   - KIF (~> 3.0)
+  - KIF/IdentifierTests
   - M13ProgressSuite (~> 1.2)
-  - PureLayout (~> 3.0)
   - RMDateSelectionViewController
   - SkyFloatingLabelTextField (~> 2.0)
   - SZTextView
@@ -26,9 +27,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   FaveButton: cfcbc5e73da159c4f916613da5687357b5bb4783
-  KIF: 082eb65279e51c3092923802849eb796a04982ab
+  KIF: f2a6025bb3f11692df675054a134d43a9ec2d7db
   M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RMActionController: e516bc0651a61d675abb5eaf09ee79a92ae6155c
   RMDateSelectionViewController: 81b9251420345c793921b7516b77a9c80be7d399
   SkyFloatingLabelTextField: 070e749632ffd608d6fd9db3fa488a822524997c
@@ -36,6 +36,6 @@ SPEC CHECKSUMS:
   ThunderCats: 230e83861086834b920fd1402c2c8a0a5d958247
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
-PODFILE CHECKSUM: 20c6226e57ce9e5b39e56ff0f9549728caab511b
+PODFILE CHECKSUM: 00bff0dc114dc22be1bb76b3fac3bcbfdc74a1c8
 
 COCOAPODS: 1.2.0

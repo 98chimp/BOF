@@ -9,7 +9,6 @@ target 'BOF' do
   pod 'ThunderCats', '~> 2.1'
   pod 'SkyFloatingLabelTextField', '~> 2.0'
   pod 'M13ProgressSuite', '~> 1.2'
-  pod 'PureLayout', '~> 3.0'
   pod 'RMDateSelectionViewController'
   pod 'FaveButton', '~> 2.0.3'
   pod 'UICKeyChainStore'
@@ -19,9 +18,18 @@ target 'BOF' do
     inherit! :search_paths
   end
 
-  target 'BOFUITests' do
+  target 'KIFTests' do
     inherit! :search_paths
     pod 'KIF', '~> 3.0'
+    pod 'KIF/IdentifierTests'
   end
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
 end
