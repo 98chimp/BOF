@@ -14,7 +14,7 @@ class SignupTableViewController: BaseTableViewController
     fileprivate typealias bofTextField = Constants.BOFTextField
     
     // MARK: - Properties
-    var delegate: SignupSuccessProtocol?
+    weak var delegate: SignupSuccessProtocol?
     
     // MARK: - Outlets
     @IBOutlet weak var cancelButton: UIButton!

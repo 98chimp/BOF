@@ -19,15 +19,9 @@ class NewPostViewController: UIViewController, UITextViewDelegate
     
     // MARK: - Properties
     fileprivate let currentUser = User.current
-    var delegate: NewPostProtocol?
+    weak var delegate: NewPostProtocol?
     
     // MARK: - Lifecycle
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        configureView()
-    }
-    
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
@@ -38,11 +32,6 @@ class NewPostViewController: UIViewController, UITextViewDelegate
     {
         super.viewWillDisappear(animated)
         view.endEditing(true)
-    }
-    
-    // MARK: - Helpers
-    fileprivate func configureView()
-    {
     }
     
     // MARK: - TextView Delegate

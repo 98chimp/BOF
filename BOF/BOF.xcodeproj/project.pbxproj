@@ -39,6 +39,7 @@
 		EB4FAF411EB690D100E8315A /* SigninTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF401EB690D100E8315A /* SigninTableViewController.swift */; };
 		EB4FAF431EB694F600E8315A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FAF421EB694F600E8315A /* User.swift */; };
 		EB57CF2A1EB8891E00008C83 /* MutableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB57CF291EB8891E00008C83 /* MutableCollection+Extensions.swift */; };
+		EB6DA7031EC23AFE003EE7A7 /* 7zX in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6DA7021EC23AFE003EE7A7 /* 7zX */; };
 		EB9B0BD71EB6F04A00C6DDB5 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */; };
 		EBAB769D1EB7E462008CBFF7 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB769C1EB7E462008CBFF7 /* NewPostViewController.swift */; };
 		EBAB769F1EB802B1008CBFF7 /* NewPostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB769E1EB802B1008CBFF7 /* NewPostProtocol.swift */; };
@@ -117,6 +118,7 @@
 		EB4FAF421EB694F600E8315A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB57CF291EB8891E00008C83 /* MutableCollection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Extensions.swift"; sourceTree = "<group>"; };
 		EB57CF2B1EB8B84700008C83 /* KIFTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KIFTests-Bridging-Header.h"; path = "../BOFUITests/KIFTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB6DA7021EC23AFE003EE7A7 /* 7zX */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7zX; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/7zX"; sourceTree = "<group>"; };
 		EB9B0BD61EB6F04A00C6DDB5 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		EBAB769C1EB7E462008CBFF7 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		EBAB769E1EB802B1008CBFF7 /* NewPostProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostProtocol.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6DA7031EC23AFE003EE7A7 /* 7zX in Frameworks */,
 				19B9D36BC084AB59752A4661 /* Pods_BOF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +158,7 @@
 		672C3F00A9A23C689035CBB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB6DA7021EC23AFE003EE7A7 /* 7zX */,
 				5CE4D92154C631C017EBDA81 /* Pods_BOF.framework */,
 				B3F530E7F62C8E782F421048 /* Pods_BOF_BOFUITests.framework */,
 				AB222CFE542A80E75B76F05F /* libPods-BOFUITests.a */,

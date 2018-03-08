@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SignupSuccessProtocol
+protocol SignupSuccessProtocol: class
 {
     func handleSignupSucess()
 }

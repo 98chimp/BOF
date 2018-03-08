@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol NewPostProtocol
+protocol NewPostProtocol: class
 {
     func handleNew(_ post: Post)
 }
