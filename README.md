@@ -33,10 +33,5 @@ In addition, the app was subject to extensive user testing on 3 separate iPhone 
 * KIF (https://github.com/kif-framework/KIF)
 
 
-### UPDATE
-The KIF issue mentioned above affected all three of my work projects today. I have now identified and applied an effective fix to restore UI testing using KIF for those projects.
-
-I shall do the same for this project later this evening (May 2, 2017).
-
-**NEW UPDATE**
-Initial attempt failed and I have to postpone fixing the KIF framework to this weekend (May 6, 2017).
+### ToDo:
+Tie the app to Firebase to allow account creation, and more importantly, BOFfing about things with your friends.
